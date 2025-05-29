@@ -15,7 +15,7 @@ public class ArrayShuffleExample {
         // 0~9 랜덤값 구한다. 예를 들어 5이 나왔다. 2번방과 5번방 스와핑
 
         for (int i = 0; i < arr.length; i++) {
-           int num = (int)(Math.random() * 10);
+           int num = (int)(Math.random() * arr.length);
 
            int temp = arr[i];
            arr[i] = arr[num];
@@ -23,6 +23,7 @@ public class ArrayShuffleExample {
 
         }
         System.out.println(Arrays.toString(arr));
+        /* 스와핑 방법
         int a = 1;
         int b = 2;
 
@@ -34,6 +35,8 @@ public class ArrayShuffleExample {
 
         System.out.println(a);
         System.out.println(b);
+
+         */
     }
 
 }
